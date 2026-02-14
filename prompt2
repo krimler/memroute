@@ -1,0 +1,70 @@
+I need you to generate 50 QA questions with LONG, DETAILED memory content (each memory item ~1000 characters). This tests how routing behaves with substantial context.
+
+**MEMORY STORES (with long content):**
+
+1. **STM (Short-Term Memory)**: Current session - detailed technical discussions
+   - [~1000 chars] Detailed discussion about transformer architecture: "User is asking about the attention mechanism in transformers. They want to understand how multi-head attention works, specifically the query-key-value computation, the scaling factor of 1/sqrt(d_k), and how the heads are concatenated. User mentioned they're implementing this for a custom NLP model and need to understand the mathematical foundations including softmax normalization, positional encodings using sine/cosine functions, and the residual connections that help with gradient flow during backpropagation..."
+   
+   - [~1000 chars] Discussion about AI alignment research: "User is deeply interested in the alignment problem. We discussed RLHF (Reinforcement Learning from Human Feedback), Constitutional AI approaches, debate as an alignment technique, interpretability research including mechanistic interpretability and activation patching, the challenges of goal misgeneralization, deceptive alignment concerns, and scalable oversight problems. User specifically asked about Anthropic's approach versus OpenAI's approach and the differences in their safety frameworks..."
+
+2. **Summary**: User research profile - detailed academic background
+   - [~1000 chars] User's doctoral research on wild giraffe populations: "User is Dr. Alex Chen, a wildlife biologist specializing in giraffe population dynamics in East African savannas. Their doctoral thesis titled 'Spatiotemporal Patterns of Reticulated Giraffe Movement in Northern Kenya: Implications for Conservation Corridors' involved 4 years of field research using GPS collar tracking of 47 individual giraffes across 12,000 square kilometers. Key findings included seasonal migration patterns correlated with acacia woodland density, social network analysis revealing matrilineal group structures, and human-wildlife conflict zones near agricultural boundaries..."
+   
+   - [~1000 chars] User's architecture expertise: "User has extensive knowledge of Brutalist architecture, particularly the works of Le Corbusier and the Metabolist movement in Japan. They've studied the Unité d'Habitation in Marseille, the National Theatre in London by Denys Lasdun, and Habitat 67 in Montreal by Moshe Safdie. User is particularly interested in the philosophical underpinnings of raw concrete (béton brut), the social housing ideals embedded in these structures, the controversy around demolition versus preservation, and the recent resurgence of appreciation for Brutalist aesthetics in contemporary architectural discourse..."
+
+3. **LTM (Long-Term Memory)**: Past detailed conversations
+   - [~1000 chars] World War II Pacific Theater discussion: "In our conversation three weeks ago, user asked detailed questions about the Pacific Theater of World War II. We discussed the island-hopping campaign strategy developed by Admiral Chester Nimitz, the significance of the Battle of Midway as the turning point including the role of codebreaking (MAGIC and ULTRA), the brutal nature of the Guadalcanal campaign, the strategic debates between MacArthur's return to the Philippines versus direct assault on Japan, the firebombing of Tokyo and its devastating civilian casualties exceeding even the atomic bombs, and the complex factors leading to Japan's surrender including Soviet entry into the Pacific war..."
+   
+   - [~1000 chars] Previous ML architecture discussion: "Two weeks ago, we had an extensive discussion about the evolution from RNNs to Transformers. User wanted to understand why attention mechanisms replaced recurrence, the parallelization benefits during training, the O(n²) complexity problem with sequence length, and solutions like sparse attention (Longformer, BigBird), linear attention (Performers), and state-space models (Mamba). We also discussed the emergence of capabilities at scale, the chinchilla scaling laws showing compute-optimal training, and the debate about whether transformers can truly reason or merely pattern match..."
+
+4. **Episodic**: Raw conversation transcripts (exact detailed quotes from above)
+
+**GENERATE 50 QUESTIONS with this distribution:**
+
+| Type | Count | Required Stores | Description |
+|------|-------|-----------------|-------------|
+| single_hop | 10 | summary | Facts from detailed profile |
+| single_session | 8 | stm | Current technical discussion details |
+| recent_session | 8 | ltm | Past conversation specifics |
+| multi_hop | 6 | summary, ltm | Connect research background with past discussions |
+| memory_capacity | 8 | ltm, episodic | List multiple detailed facts |
+| temporal | 5 | ltm, episodic | Compare discussions across time |
+| knowledge_update | 5 | summary, ltm | Current expertise vs past discussions |
+
+**OUTPUT FORMAT (JSON):**
+```json
+[
+  {
+    "query": "What was the sample size in the user's giraffe GPS tracking study?",
+    "answer": "47 individual giraffes",
+    "alt_answers": ["47 giraffes", "47"],
+    "stores": ["summary"],
+    "type": "single_hop"
+  },
+  {
+    "query": "Which naval battle did we discuss as the Pacific War turning point?",
+    "answer": "battle of midway",
+    "alt_answers": ["midway"],
+    "stores": ["ltm"],
+    "type": "recent_session"
+  },
+  {
+    "query": "How does the user's interest in transformers connect to our past RNN discussion?",
+    "answer": "attention mechanisms replaced recurrence",
+    "alt_answers": ["parallelization", "attention replaced recurrence"],
+    "stores": ["summary", "ltm"],
+    "type": "multi_hop"
+  }
+]
+```
+
+**IMPORTANT:**
+1. Questions should require reading the LONG detailed content to answer
+2. Answers should be specific facts buried in the long text (not obvious from first sentence)
+3. Include technical terms, numbers, names that only appear in the detailed content
+4. Test whether LLM can find needle-in-haystack within long context
+5. Answers lowercase, alt_answers for variations
+
+**ALSO OUTPUT the full memory content** (4 items per store, each ~1000 chars) that you used to generate the questions, so I can use it in my experiment.
+
+Generate the memory content first, then the 50 questions as JSON.

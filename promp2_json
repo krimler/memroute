@@ -1,0 +1,128 @@
+⸻
+
+MEMORY CONTENT
+
+STM (Short-Term Memory)
+
+STM-1 — Transformer attention deep dive
+User is implementing a transformer encoder layer from scratch in a custom PyTorch NLP framework. They requested a detailed derivation of the multi-head attention pipeline, including the projection matrices W_Q, W_K, W_V, splitting embeddings into per-head subspaces, computing scaled dot-product attention, and concatenating heads before the output projection. Discussion emphasized why the scaling factor 1/\sqrt{d_k} prevents gradient saturation when softmax is applied to large dot-product magnitudes. We also discussed sinusoidal positional encodings defined as sine/cosine waves of exponentially increasing frequencies, residual connections combined with layer normalization to stabilize training, dropout placement inside attention weights and feedforward blocks, and exploration of rotary positional embeddings (RoPE) for relative position encoding.
+
+STM-2 — Alignment frameworks comparison
+The user asked for a comparison between RLHF pipelines and Constitutional AI. We examined supervised fine-tuning datasets, reward model training, PPO policy optimization, and self-critique mechanisms using rule-based constitutional prompts. The discussion included interpretability tools such as activation patching, feature visualization, probing classifiers, and causal tracing for identifying transformer circuits. We also explored scalable oversight models combining automated evaluators with limited human labeling, along with risks such as deceptive alignment, specification gaming, and goal misgeneralization across distribution shifts.
+
+STM-3 — Efficient transformer variants
+User is studying long-context transformer variants capable of processing sequences beyond 128k tokens. We discussed sparse attention patterns such as sliding window and global tokens in Longformer and BigBird, kernelized linear attention used by Performer, retrieval-augmented transformers combining vector databases with inference pipelines, and memory-compressed attention that periodically downsamples intermediate representations. KV-cache reuse during autoregressive decoding was also discussed as a major latency optimization technique.
+
+STM-4 — Scaling law implementation
+We discussed implementing compute-optimal training based on Chinchilla scaling laws. The conversation included balancing parameter count and training tokens, dataset deduplication to reduce memorization artifacts, tokenizer entropy effects on cross-entropy loss, cosine learning-rate decay, AdamW schedules, gradient clipping, and experimental design for testing scaling predictions at sub-billion parameter regimes.
+
+⸻
+
+SUMMARY (Profile)
+
+SUMMARY-1 — Giraffe migration research
+Dr. Alex Chen conducted a four-year ecological study tracking 47 reticulated giraffes using GPS satellite collars transmitting hourly location coordinates across roughly 12,000 square kilometers of northern Kenyan savanna. Seasonal migration routes were strongly correlated with rainfall patterns and acacia woodland density. Drone-based vegetation surveys and interviews with pastoralist communities helped identify conflict zones where livestock expansion reduced migration corridors. The research proposed conservation corridor preservation supported by cross-border wildlife agreements.
+
+SUMMARY-2 — Social network giraffe analysis
+The doctoral research also constructed longitudinal giraffe social interaction networks using proximity clustering from GPS data. Matrilineal herd persistence was observed across breeding cycles. Betweenness centrality metrics identified connector individuals essential to maintaining migration network continuity. DBSCAN clustering detected seasonal aggregation points critical for population resilience.
+
+SUMMARY-3 — Brutalist architecture expertise
+User specializes in Brutalist architecture research, studying Le Corbusier’s Unité d’Habitation, Denys Lasdun’s National Theatre London, and Moshe Safdie’s Habitat 67. Their research explores béton brut philosophy, social housing ideology, demolition vs preservation debates, and the Japanese Metabolist movement including Kisho Kurokawa’s Nakagin Capsule Tower.
+
+SUMMARY-4 — Architectural preservation advocacy
+User advocates evaluating Brutalist buildings using lifecycle sustainability metrics rather than aesthetic trends. Their lectures compare adaptive reuse projects in Europe and North America and emphasize historical housing equity narratives influencing contemporary public perception of Brutalist structures.
+
+⸻
+
+LTM (Long-Term Memory)
+
+LTM-1 — Pacific War analysis
+Conversation discussed the Pacific Theater strategy of island-hopping led by Admiral Chester Nimitz, emphasizing the Battle of Midway as a decisive turning point enabled by U.S. codebreaking. The Guadalcanal campaign logistics, MacArthur versus Nimitz strategic debates, Tokyo firebombing civilian casualties, and Soviet entry accelerating Japan’s surrender were analyzed.
+
+LTM-2 — Neural architecture evolution
+Two weeks earlier we discussed the transition from RNNs to transformers, highlighting parallel training advantages of self-attention, quadratic sequence complexity challenges, sparse and linear attention research (Longformer, BigBird, Performer), and scaling-law-driven emergence of capabilities in large language models.
+
+LTM-3 — Conservation policy modeling
+Earlier discussions examined agent-based ecological models showing corridor fragmentation increasing extinction risk despite stable habitat area. Metapopulation theory, dispersal probability modeling, and satellite land-use classification were analyzed for long-term conservation planning.
+
+LTM-4 — Urban design history
+We compared modernist megastructure planning with modern mixed-use urbanism, discussing density optimization, infrastructure efficiency, and the evolving sustainability perspective in redevelopment.
+
+⸻
+
+EPISODIC (Raw transcripts)
+
+EPISODIC-1
+“User asked: explain how the 1/sqrt(d_k) scaling prevents softmax saturation in attention scores and how positional encoding sine/cosine functions encode order.”
+
+EPISODIC-2
+“User asked: what is the difference between RLHF PPO optimization and constitutional AI self-critique evaluation frameworks?”
+
+EPISODIC-3
+“User asked: why did the Battle of Midway become the turning point in the Pacific War?”
+
+EPISODIC-4
+“User asked: why did transformers replace RNNs despite quadratic complexity?”
+
+⸻
+
+50 QUESTIONS (JSON)
+
+[
+  {"query":"How many giraffes were tracked in the field study?","answer":"47 reticulated giraffes","alt_answers":["47 giraffes","47"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Approximately how large was the migration study region?","answer":"12,000 square kilometers","alt_answers":["12000 km"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which vegetation factor correlated with migration routes?","answer":"acacia woodland density","alt_answers":["acacia density"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which clustering method detected aggregation points?","answer":"dbscan","alt_answers":["dbscan clustering"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which centrality metric identified connector giraffes?","answer":"betweenness centrality","alt_answers":["centrality"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which Japanese architecture example was studied?","answer":"nakagin capsule tower","alt_answers":["nakagin tower"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which London building was analyzed in Brutalist studies?","answer":"national theatre","alt_answers":["national theatre london"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which architectural material philosophy is associated with Brutalism?","answer":"béton brut","alt_answers":["raw concrete"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which Montreal project represents Brutalist housing innovation?","answer":"habitat 67","alt_answers":["habitat67"],"stores":["summary"],"type":"single_hop"},
+  {"query":"Which conservation policy was recommended to preserve corridors?","answer":"transboundary wildlife agreements","alt_answers":["wildlife agreements"],"stores":["summary"],"type":"single_hop"},
+
+  {"query":"Which scaling factor stabilizes dot-product attention?","answer":"1/sqrt(d_k)","alt_answers":["1 over sqrt dk"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which positional encoding variant is being explored?","answer":"rotary positional embeddings","alt_answers":["rope"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which interpretability method replaces internal activations?","answer":"activation patching","alt_answers":["patching"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which optimization algorithm follows reward model training in rlhf?","answer":"ppo","alt_answers":["proximal policy optimization"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which architecture uses sliding window sparse attention?","answer":"longformer","alt_answers":["bigbird"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which attention variant uses kernel approximations?","answer":"performer linear attention","alt_answers":["performer"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which scaling law guides compute-optimal training discussed in session?","answer":"chinchilla scaling laws","alt_answers":["chinchilla"],"stores":["stm"],"type":"single_session"},
+  {"query":"Which optimization technique prevents exploding gradients in scaling experiments?","answer":"gradient clipping","alt_answers":["clipping"],"stores":["stm"],"type":"single_session"},
+
+  {"query":"Which naval battle was the turning point of the Pacific War?","answer":"battle of midway","alt_answers":["midway"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which campaign highlighted brutal jungle warfare logistics?","answer":"guadalcanal campaign","alt_answers":["guadalcanal"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which admiral led the island-hopping strategy?","answer":"chester nimitz","alt_answers":["nimitz"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which neural architecture replaced recurrence for parallel training?","answer":"transformers","alt_answers":["transformer models"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which complexity issue arises with long sequence attention?","answer":"quadratic complexity","alt_answers":["o(n^2)"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which research introduced sparse attention for long sequences?","answer":"longformer","alt_answers":["bigbird"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which ecological theory explains corridor fragmentation risk?","answer":"metapopulation theory","alt_answers":["metapopulation"],"stores":["ltm"],"type":"recent_session"},
+  {"query":"Which redevelopment concept replaced megastructure planning in discussions?","answer":"mixed-use urbanism","alt_answers":["mixed use"],"stores":["ltm"],"type":"recent_session"},
+
+  {"query":"How does the user's corridor research connect to earlier ecological modeling discussions?","answer":"corridor fragmentation increases extinction risk","alt_answers":["fragmentation risk"],"stores":["summary","ltm"],"type":"multi_hop"},
+  {"query":"Which architectural interest aligns with earlier urban design debates?","answer":"brutalist architecture preservation","alt_answers":["brutalism preservation"],"stores":["summary","ltm"],"type":"multi_hop"},
+  {"query":"How does giraffe migration research relate to metapopulation modeling discussions?","answer":"dispersal connectivity modeling","alt_answers":["connectivity"],"stores":["summary","ltm"],"type":"multi_hop"},
+  {"query":"Which conservation recommendation aligns with earlier habitat modeling analysis?","answer":"migration corridor preservation","alt_answers":["corridor preservation"],"stores":["summary","ltm"],"type":"multi_hop"},
+  {"query":"Which building preservation topic connects to historical urban redevelopment discussions?","answer":"adaptive reuse of brutalist buildings","alt_answers":["adaptive reuse"],"stores":["summary","ltm"],"type":"multi_hop"},
+  {"query":"Which social network metric research connects to earlier ecological modeling?","answer":"connector individual centrality","alt_answers":["centrality connectors"],"stores":["summary","ltm"],"type":"multi_hop"},
+
+  {"query":"Name one major Pacific War battle discussed.","answer":"battle of midway","alt_answers":["guadalcanal"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"List one sparse attention architecture discussed historically.","answer":"longformer","alt_answers":["bigbird"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"Provide one transformer complexity issue mentioned.","answer":"quadratic complexity","alt_answers":["o(n^2)"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"Name one ecological modeling framework mentioned earlier.","answer":"metapopulation theory","alt_answers":["agent-based modeling"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"Mention one urban planning concept discussed earlier.","answer":"mixed-use development","alt_answers":["mixed-use urbanism"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"Give one transformer replacement for recurrence discussed.","answer":"self-attention","alt_answers":["attention mechanisms"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"Provide one naval leader mentioned in earlier conversations.","answer":"chester nimitz","alt_answers":["nimitz"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+  {"query":"List one ecological simulation method discussed previously.","answer":"agent-based simulation","alt_answers":["agent modeling"],"stores":["ltm","episodic"],"type":"memory_capacity"},
+
+  {"query":"Which architecture replaced rnns before later sparse attention research?","answer":"transformers","alt_answers":["transformer models"],"stores":["ltm","episodic"],"type":"temporal"},
+  {"query":"Which naval battle occurred before Japan's surrender discussions?","answer":"battle of midway","alt_answers":["midway"],"stores":["ltm","episodic"],"type":"temporal"},
+  {"query":"Which attention discussion happened before scaling-law conversations?","answer":"quadratic complexity problem","alt_answers":["attention complexity"],"stores":["ltm","episodic"],"type":"temporal"},
+  {"query":"Which conservation modeling discussion preceded corridor preservation recommendations?","answer":"metapopulation modeling","alt_answers":["metapopulation"],"stores":["ltm","episodic"],"type":"temporal"},
+  {"query":"Which architecture discussion came before efficient attention variants?","answer":"rnn to transformer transition","alt_answers":["transformer transition"],"stores":["ltm","episodic"],"type":"temporal"},
+
+  {"query":"Which conservation expertise continues from earlier ecological modeling discussions?","answer":"corridor connectivity research","alt_answers":["connectivity research"],"stores":["summary","ltm"],"type":"knowledge_update"},
+  {"query":"Which architecture interest remains consistent with earlier urban design discussions?","answer":"brutalist architecture research","alt_answers":["brutalism"],"stores":["summary","ltm"],"type":"knowledge_update"},
+  {"query":"Which migration analysis approach aligns with earlier ecological simulations?","answer":"spatial movement modeling","alt_answers":["movement modeling"],"stores":["summary","ltm"],"type":"knowledge_update"},
+  {"query":"Which research theme persists between profile and past conversations?","answer":"conservation corridor preservation","alt_answers":["corridor preservation"],"stores":["summary","ltm"],"type":"knowledge_update"},
+  {"query":"Which population dynamics focus continues from past modeling conversations?","answer":"giraffe population connectivity","alt_answers":["population connectivity"],"stores":["summary","ltm"],"type":"knowledge_update"}
+]

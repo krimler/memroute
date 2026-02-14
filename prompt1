@@ -1,0 +1,75 @@
+I need you to generate 100 QA questions for evaluating a memory routing system. The system has 4 memory stores:
+
+**MEMORY STORES:**
+1. **STM (Short-Term Memory)**: Current session context
+   - Meeting at 3pm today with marketing team
+   - Weather in Chicago is 45°F and cloudy
+   - Q4 budget allocation discussion
+   - User feeling tired, needs coffee
+   - Follow-up call scheduled for tomorrow morning
+
+2. **Summary**: User profile facts
+   - Name: Alex Chen, Senior Software Engineer at TechCorp
+   - Health: Allergic to penicillin and shellfish, Doctor is Dr. Sarah Smith
+   - Contact: Phone 555-867-5309, Email alex.chen@techcorp.com
+   - Preferences: Favorite restaurant Olive Garden, prefers morning meetings before 10am
+   - Work: Current project "Phoenix", Manager is Jennifer Williams
+   - Personal: Birthday March 15th, has dog named Max (golden retriever, 3 years old), lives in San Francisco
+   - Education: Stanford University, CS degree, graduated 2018
+   - Hobbies: hiking, photography, guitar
+
+3. **LTM (Long-Term Memory)**: Past conversation summaries
+   - Trip to Italy (Rome, Florence), loved Colosseum and pasta
+   - Phoenix project deadline is Friday, January 24th
+   - Restaurants mentioned: Olive Garden, Chipotle, Bangkok Garden (Thai)
+   - Health check-in about allergies, doctor appointment
+   - Manager changed from Michael Torres to Jennifer Williams after reorg
+   - Weight was 185 lbs in January, goal is 170 lbs (on diet)
+   - Learning "Hotel California" on guitar for 2 months
+   - Dog Max had vet appointment
+
+4. **Episodic**: Raw conversation transcripts (exact quotes from above topics)
+
+**GENERATE 100 QUESTIONS with this distribution:**
+
+| Type | Count | Required Stores | Description |
+|------|-------|-----------------|-------------|
+| single_hop | 20 | summary | Simple fact lookup |
+| single_session | 15 | stm | Current session reference |
+| recent_session | 15 | ltm | Past conversation reference |
+| multi_hop | 10 | summary, ltm | Connects facts across stores |
+| memory_capacity | 15 | ltm, episodic | "List all", exhaustive recall |
+| temporal | 15 | ltm, episodic | "Before X", historical comparison |
+| knowledge_update | 10 | summary, ltm | Current state vs history |
+
+**OUTPUT FORMAT (JSON array):**
+```json
+[
+  {
+    "query": "What allergies does the user have?",
+    "answer": "penicillin",
+    "alt_answers": ["shellfish"],
+    "stores": ["summary"],
+    "type": "single_hop"
+  },
+  {
+    "query": "Who was the user's manager before the reorg?",
+    "answer": "michael torres",
+    "alt_answers": ["michael", "torres"],
+    "stores": ["ltm", "episodic"],
+    "type": "temporal"
+  }
+]
+```
+
+**RULES:**
+1. `answer` should be lowercase, the primary expected answer
+2. `alt_answers` are alternative acceptable answers (also lowercase)
+3. `stores` is the minimal set of stores needed to answer
+4. Questions should be natural and varied (not repetitive phrasing)
+5. For "list all" questions, answer should be one item, alt_answers should have others
+6. For temporal questions, use "before", "originally", "previously", "changed from"
+7. For multi_hop, require combining info from multiple stores
+8. Ensure answers actually exist in the memory content above
+
+Generate all 100 questions now as a JSON array.
