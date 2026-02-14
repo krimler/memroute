@@ -1,0 +1,1762 @@
+[
+  {
+    "user_id": "user_000",
+    "name": "Peter Davis",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for back pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Buddy",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys chess",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_001",
+    "name": "Amy Campbell",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to soy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 3pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Max",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys cooking",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_002",
+    "name": "Amy Jackson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to penicillin",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Smith for diabetes",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at TechStart Inc",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Leo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys cooking",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_003",
+    "name": "Edward Williams",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to dairy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for asthma",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 10am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at CloudFirst",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Milo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_004",
+    "name": "William Taylor",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Innovate Labs",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Cooper",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": []
+  },
+  {
+    "user_id": "user_005",
+    "name": "Stephanie Roberts",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to eggs",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at CloudFirst",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Milo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_006",
+    "name": "Charles Martinez",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Garcia for insomnia",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Innovate Labs",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys chess",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_007",
+    "name": "Ashley Anderson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Smith for anxiety",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Innovate Labs",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Max",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_008",
+    "name": "Charles Green",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for insomnia",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Oliver",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_009",
+    "name": "David Anderson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to gluten",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Brown for anxiety",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at DataDrive",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys reading",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_010",
+    "name": "Catherine Young",
+    "facts": [
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Bella",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_011",
+    "name": "James Scott",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to gluten",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Oliver",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_012",
+    "name": "James Martin",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to sulfa drugs",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Patel for knee pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Rocky",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_013",
+    "name": "Melissa Adams",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to latex",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Enterprise Co",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Cooper",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_014",
+    "name": "Brian Nelson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to soy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Lee for anxiety",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys photography",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_015",
+    "name": "Andrew Smith",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to shellfish",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Garcia for back pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Enterprise Co",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Leo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys painting",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_016",
+    "name": "Michelle Harris",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for back pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 3pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Enterprise Co",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Oliver",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_017",
+    "name": "Heather Anderson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for knee pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at CloudFirst",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Oliver",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys chess",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_018",
+    "name": "Brian Nelson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to dairy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Bella",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys yoga",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_019",
+    "name": "Thomas Miller",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for high blood pressure",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_020",
+    "name": "Brian Williams",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to latex",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for insomnia",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_021",
+    "name": "Catherine Rodriguez",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to penicillin",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 10am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Charlie",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_022",
+    "name": "William Clark",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for high blood pressure",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys photography",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_023",
+    "name": "Christine Davis",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Smith for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 3pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Innovate Labs",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_024",
+    "name": "Kevin Lewis",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for knee pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Leo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": []
+  },
+  {
+    "user_id": "user_025",
+    "name": "Catherine Harris",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for diabetes",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Leo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_026",
+    "name": "Thomas Campbell",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to sulfa drugs",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Lee for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys swimming",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_027",
+    "name": "Amy King",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at TechStart Inc",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_028",
+    "name": "Angela Green",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to sulfa drugs",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Lee for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Max",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_029",
+    "name": "James Hill",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at DataDrive",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_030",
+    "name": "Amy Mitchell",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to peanuts",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for asthma",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Leo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_031",
+    "name": "Christine Adams",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for migraines",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Bella",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys painting",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_032",
+    "name": "Peter Wright",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to soy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys photography",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_033",
+    "name": "Brian Adams",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to soy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for anxiety",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 3pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at DataDrive",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Bella",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_034",
+    "name": "Michelle Nelson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Kim for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at CloudFirst",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Cooper",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": []
+  },
+  {
+    "user_id": "user_035",
+    "name": "Robert Hall",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for high blood pressure",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Buddy",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_036",
+    "name": "Elizabeth Brown",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to dairy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for knee pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_037",
+    "name": "Laura Carter",
+    "facts": [
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 10am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Global Solutions",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Luna",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys painting",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_038",
+    "name": "Michelle Nelson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to bee stings",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for knee pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Max",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys cooking",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_039",
+    "name": "Steven Clark",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to shellfish",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for diabetes",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a dog named Buddy",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys reading",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_040",
+    "name": "Melissa White",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to penicillin",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health"
+    ]
+  },
+  {
+    "user_id": "user_041",
+    "name": "Charles Mitchell",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Patel for anxiety",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at MegaSoft",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Milo",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys hiking",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_042",
+    "name": "Ryan Mitchell",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to sulfa drugs",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Enterprise Co",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys cooking",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_043",
+    "name": "Laura Green",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to peanuts",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Chen for insomnia",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 10am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at StartupX",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Oliver",
+        "criticality": "LOW",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys gardening",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_044",
+    "name": "Kevin Young",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to penicillin",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for diabetes",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Enterprise Co",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Enjoys painting",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_045",
+    "name": "Daniel Walker",
+    "facts": [
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Friday at 10am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_046",
+    "name": "Edward Rodriguez",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to peanuts",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for back pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Monday at 2pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Innovate Labs",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_047",
+    "name": "Emily Anderson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Allergic to soy",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Wilson for arthritis",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Thursday at 11am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at Acme Corp",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "health",
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_048",
+    "name": "Amy Baker",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Brown for back pain",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Tuesday at 9am",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at CloudFirst",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      },
+      {
+        "topic": "personal",
+        "fact": "Has a cat named Bella",
+        "criticality": "LOW",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  },
+  {
+    "user_id": "user_049",
+    "name": "Christine Robinson",
+    "facts": [
+      {
+        "topic": "health",
+        "fact": "Sees Dr. Williams for asthma",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "schedule",
+        "fact": "Doctor appointment on Wednesday at 4pm",
+        "criticality": "HIGH",
+        "mentioned_in": []
+      },
+      {
+        "topic": "work",
+        "fact": "Works at TechStart Inc",
+        "criticality": "MEDIUM",
+        "mentioned_in": []
+      }
+    ],
+    "critical_topics": [
+      "schedule"
+    ]
+  }
+]
