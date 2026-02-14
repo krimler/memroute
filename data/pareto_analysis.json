@@ -1,0 +1,283 @@
+{
+  "results": [
+    {
+      "name": "none",
+      "accuracy": 0.0,
+      "avg_tokens": 0.0,
+      "avg_cost": 0.0,
+      "per_type": {
+        "single_hop": 0.0,
+        "single_session": 0.0,
+        "recent_session": 0.0,
+        "multi_hop": 0.0,
+        "memory_capacity": 0.0,
+        "temporal": 0.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "stm",
+      "accuracy": 0.1,
+      "avg_tokens": 49.0,
+      "avg_cost": 1.0,
+      "per_type": {
+        "single_hop": 0.0,
+        "single_session": 1.0,
+        "recent_session": 0.0,
+        "multi_hop": 0.0,
+        "memory_capacity": 0.0,
+        "temporal": 0.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "summary",
+      "accuracy": 0.5,
+      "avg_tokens": 114.0,
+      "avg_cost": 1.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 0.0,
+        "recent_session": 0.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 0.3333333333333333,
+        "temporal": 0.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "ltm",
+      "accuracy": 0.65,
+      "avg_tokens": 169.0,
+      "avg_cost": 3.0,
+      "per_type": {
+        "single_hop": 0.3333333333333333,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "episodic",
+      "accuracy": 0.55,
+      "avg_tokens": 216.0,
+      "avg_cost": 5.0,
+      "per_type": {
+        "single_hop": 0.16666666666666666,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 0.5,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "stm+summary",
+      "accuracy": 0.6,
+      "avg_tokens": 163.0,
+      "avg_cost": 2.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 0.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 0.3333333333333333,
+        "temporal": 0.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "ltm+stm",
+      "accuracy": 0.7,
+      "avg_tokens": 218.0,
+      "avg_cost": 4.0,
+      "per_type": {
+        "single_hop": 0.3333333333333333,
+        "single_session": 0.5,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "episodic+stm",
+      "accuracy": 0.65,
+      "avg_tokens": 265.0,
+      "avg_cost": 6.0,
+      "per_type": {
+        "single_hop": 0.16666666666666666,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 0.5,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "ltm+summary",
+      "accuracy": 0.9,
+      "avg_tokens": 283.0,
+      "avg_cost": 4.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "episodic+summary",
+      "accuracy": 0.9,
+      "avg_tokens": 330.0,
+      "avg_cost": 6.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "episodic+ltm",
+      "accuracy": 0.65,
+      "avg_tokens": 385.0,
+      "avg_cost": 8.0,
+      "per_type": {
+        "single_hop": 0.3333333333333333,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "ltm+stm+summary",
+      "accuracy": 1.0,
+      "avg_tokens": 332.0,
+      "avg_cost": 5.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "episodic+stm+summary",
+      "accuracy": 1.0,
+      "avg_tokens": 379.0,
+      "avg_cost": 7.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "episodic+ltm+stm",
+      "accuracy": 0.75,
+      "avg_tokens": 434.0,
+      "avg_cost": 9.0,
+      "per_type": {
+        "single_hop": 0.3333333333333333,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 0.0
+      }
+    },
+    {
+      "name": "episodic+ltm+summary",
+      "accuracy": 0.9,
+      "avg_tokens": 499.0,
+      "avg_cost": 9.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 0.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "episodic+ltm+stm+summary",
+      "accuracy": 1.0,
+      "avg_tokens": 548.0,
+      "avg_cost": 10.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "hybrid",
+      "accuracy": 1.0,
+      "avg_tokens": 230.85,
+      "avg_cost": 4.0,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    {
+      "name": "oracle",
+      "accuracy": 1.0,
+      "avg_tokens": 222.4,
+      "avg_cost": 3.85,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0
+      }
+    }
+  ],
+  "pareto": [
+    "none",
+    "stm",
+    "summary",
+    "ltm",
+    "stm+summary",
+    "ltm+stm",
+    "oracle"
+  ]
+}

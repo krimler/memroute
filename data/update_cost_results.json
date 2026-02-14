@@ -1,0 +1,145 @@
+{
+  "update_frequency": {
+    "every_turn": {
+      "accuracy": 0.33,
+      "total_updates": 300,
+      "stale_lookups": 0,
+      "update_freq": 1
+    },
+    "every_3_turns": {
+      "accuracy": 0.33,
+      "total_updates": 100,
+      "stale_lookups": 0,
+      "update_freq": 3
+    },
+    "every_5_turns": {
+      "accuracy": 0.33,
+      "total_updates": 60,
+      "stale_lookups": 0,
+      "update_freq": 5
+    },
+    "end_of_session": {
+      "accuracy": 0.33,
+      "total_updates": 20,
+      "stale_lookups": 0,
+      "update_freq": 15
+    },
+    "never": {
+      "accuracy": 0.33,
+      "total_updates": 0,
+      "stale_lookups": 0,
+      "update_freq": "never"
+    }
+  },
+  "staleness_accuracy": [
+    {
+      "staleness": 0,
+      "accuracy": 1.0,
+      "expected_error_rate": 0.0
+    },
+    {
+      "staleness": 1,
+      "accuracy": 0.956,
+      "expected_error_rate": 0.04999999999999999
+    },
+    {
+      "staleness": 2,
+      "accuracy": 0.884,
+      "expected_error_rate": 0.09499999999999997
+    },
+    {
+      "staleness": 5,
+      "accuracy": 0.79,
+      "expected_error_rate": 0.20475499999999996
+    },
+    {
+      "staleness": 10,
+      "accuracy": 0.7,
+      "expected_error_rate": 0.32566077995
+    },
+    {
+      "staleness": 20,
+      "accuracy": 0.536,
+      "expected_error_rate": 0.43921167270471534
+    },
+    {
+      "staleness": 50,
+      "accuracy": 0.51,
+      "expected_error_rate": 0.49742311239633996
+    }
+  ],
+  "update_strategy": {
+    "incremental": {
+      "total_time_ms": 3250.0,
+      "total_updates": 1000,
+      "avg_time_per_turn_ms": 3.25,
+      "description": "Update after each turn"
+    },
+    "batch_session": {
+      "total_time_ms": 3500.0,
+      "total_updates": 50,
+      "avg_time_per_turn_ms": 3.5,
+      "description": "Update at end of session"
+    },
+    "batch_5_turns": {
+      "total_time_ms": 4250.0,
+      "total_updates": 200,
+      "avg_time_per_turn_ms": 4.25,
+      "description": "Update every 5 turns"
+    }
+  },
+  "overhead": [
+    {
+      "memory_size": 100,
+      "avg_lookup_ms": 0.0006012641824781895,
+      "avg_update_ms": 0.0018869643099606037,
+      "std_lookup_ms": 0.0003548293376247864,
+      "std_update_ms": 0.01386505090464189
+    },
+    {
+      "memory_size": 500,
+      "avg_lookup_ms": 0.000623802188783884,
+      "avg_update_ms": 0.0004106946289539337,
+      "std_lookup_ms": 0.00013152849034276312,
+      "std_update_ms": 0.00020506901687713974
+    },
+    {
+      "memory_size": 1000,
+      "avg_lookup_ms": 0.0006400072015821934,
+      "avg_update_ms": 0.0003870832733809948,
+      "std_lookup_ms": 0.00011176028392079811,
+      "std_update_ms": 0.0001581095540738799
+    },
+    {
+      "memory_size": 5000,
+      "avg_lookup_ms": 0.0006724963895976543,
+      "avg_update_ms": 0.0004069879651069641,
+      "std_lookup_ms": 9.308291558093803e-05,
+      "std_update_ms": 0.00016913124696351622
+    },
+    {
+      "memory_size": 10000,
+      "avg_lookup_ms": 0.000677106436342001,
+      "avg_update_ms": 0.0009515602141618729,
+      "std_lookup_ms": 8.507124736625914e-05,
+      "std_update_ms": 0.004646287122397658
+    }
+  ],
+  "total_cost": {
+    "uniform_no_routing": {
+      "total_cost_ms": 550000.0,
+      "avg_cost_per_query_ms": 550.0,
+      "k": 10
+    },
+    "routing_incremental": {
+      "total_cost_ms": 528350.0000000001,
+      "avg_cost_per_query_ms": 528.3500000000001,
+      "k": 5
+    },
+    "routing_batch": {
+      "total_cost_ms": 528350.0000000001,
+      "avg_cost_per_query_ms": 528.3500000000001,
+      "k": 5
+    }
+  }
+}

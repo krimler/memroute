@@ -1,0 +1,131 @@
+{
+  "locomo": {
+    "uniform": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "temporal": 1.0,
+        "recent_session": 1.0,
+        "single_session": 1.0,
+        "user_fact": 1.0,
+        "multi_session": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    "rule_based": {
+      "accuracy": 0.5722222222222222,
+      "avg_k": 4.477777777777778,
+      "efficiency": 2.2332506203473943,
+      "per_type": {
+        "temporal": 0.0,
+        "recent_session": 0.5806451612903226,
+        "single_session": 0.71875,
+        "user_fact": 1.0,
+        "multi_session": 0.0,
+        "knowledge_update": 1.0
+      }
+    },
+    "ucb_enhanced": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "temporal": 1.0,
+        "recent_session": 1.0,
+        "single_session": 1.0,
+        "user_fact": 1.0,
+        "multi_session": 1.0,
+        "knowledge_update": 1.0
+      }
+    },
+    "embedding_only": {
+      "accuracy": 0.9222222222222223,
+      "avg_k": 5.105555555555555,
+      "efficiency": 1.9586507072905333,
+      "per_type": {
+        "temporal": 0.875,
+        "recent_session": 1.0,
+        "single_session": 1.0,
+        "user_fact": 0.8484848484848485,
+        "multi_session": 0.8064516129032258,
+        "knowledge_update": 1.0
+      }
+    },
+    "hybrid": {
+      "accuracy": 0.9444444444444444,
+      "avg_k": 7.144444444444445,
+      "efficiency": 1.3996889580093312,
+      "per_type": {
+        "temporal": 1.0,
+        "recent_session": 1.0,
+        "single_session": 0.90625,
+        "user_fact": 1.0,
+        "multi_session": 0.7741935483870968,
+        "knowledge_update": 1.0
+      }
+    }
+  },
+  "longmemeval": {
+    "uniform": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "temporal": 1.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0,
+        "memory_capacity": 1.0,
+        "multi_hop": 1.0
+      }
+    },
+    "rule_based": {
+      "accuracy": 0.39166666666666666,
+      "avg_k": 4.275,
+      "efficiency": 2.3391812865497075,
+      "per_type": {
+        "temporal": 0.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0,
+        "memory_capacity": 0.0,
+        "multi_hop": 0.12
+      }
+    },
+    "ucb_enhanced": {
+      "accuracy": 1.0,
+      "avg_k": 9.216666666666667,
+      "efficiency": 1.0849909584086799,
+      "per_type": {
+        "temporal": 1.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0,
+        "memory_capacity": 1.0,
+        "multi_hop": 1.0
+      }
+    },
+    "embedding_only": {
+      "accuracy": 0.9666666666666667,
+      "avg_k": 7.041666666666667,
+      "efficiency": 1.4201183431952662,
+      "per_type": {
+        "temporal": 0.8333333333333334,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0,
+        "memory_capacity": 1.0,
+        "multi_hop": 1.0
+      }
+    },
+    "hybrid": {
+      "accuracy": 1.0,
+      "avg_k": 7.483333333333333,
+      "efficiency": 1.3363028953229399,
+      "per_type": {
+        "temporal": 1.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0,
+        "memory_capacity": 1.0,
+        "multi_hop": 1.0
+      }
+    }
+  }
+}

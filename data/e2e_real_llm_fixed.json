@@ -1,0 +1,962 @@
+{
+  "results": {
+    "uniform": {
+      "accuracy": 0.85,
+      "cost": 10.0,
+      "correct": 17,
+      "total": 20,
+      "per_type": {
+        "single_hop": 1.0,
+        "single_session": 0.5,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 0.6666666666666666,
+        "knowledge_update": 0.0
+      }
+    },
+    "rule_fixed": {
+      "accuracy": 0.9,
+      "cost": 3.95,
+      "correct": 18,
+      "total": 20,
+      "per_type": {
+        "single_hop": 0.8333333333333334,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 0.6666666666666666,
+        "knowledge_update": 1.0
+      }
+    },
+    "hybrid_fixed": {
+      "accuracy": 0.9,
+      "cost": 4.0,
+      "correct": 18,
+      "total": 20,
+      "per_type": {
+        "single_hop": 0.8333333333333334,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 0.6666666666666666,
+        "knowledge_update": 1.0
+      }
+    },
+    "oracle": {
+      "accuracy": 0.9,
+      "cost": 3.85,
+      "correct": 18,
+      "total": 20,
+      "per_type": {
+        "single_hop": 0.8333333333333334,
+        "single_session": 1.0,
+        "recent_session": 1.0,
+        "multi_hop": 1.0,
+        "memory_capacity": 1.0,
+        "temporal": 0.6666666666666666,
+        "knowledge_update": 1.0
+      }
+    }
+  },
+  "responses": {
+    "uniform": [
+      {
+        "query": "What allergies does the user have?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The user is allergic to penicillin and shellfish.",
+        "expected": "penicillin",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Dr. Sarah Smith",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "What is the user's phone number?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "555-867-5309",
+        "expected": "555-867-5309",
+        "correct": true
+      },
+      {
+        "query": "Where does the user work?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "User works at TechCorp.",
+        "expected": "techcorp",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's current manager?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Jennifer Williams is the user's current manager.",
+        "expected": "jennifer williams",
+        "correct": true
+      },
+      {
+        "query": "What is the user's favorite restaurant?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Olive Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What time is the user's meeting today?",
+        "type": "single_session",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The user's meeting today is at 3pm.",
+        "expected": "3pm",
+        "correct": true
+      },
+      {
+        "query": "What budget topic was the user asking about?",
+        "type": "single_session",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Information not available.",
+        "expected": "q4",
+        "correct": false
+      },
+      {
+        "query": "What country did the user travel to recently?",
+        "type": "recent_session",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Italy",
+        "expected": "italy",
+        "correct": true
+      },
+      {
+        "query": "When is the Phoenix project deadline?",
+        "type": "recent_session",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The Phoenix project deadline is Friday, January 24th.",
+        "expected": "friday",
+        "correct": true
+      },
+      {
+        "query": "What new Thai restaurant did the user try?",
+        "type": "recent_session",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Bangkok Garden.",
+        "expected": "bangkok garden",
+        "correct": true
+      },
+      {
+        "query": "What is the user's current project and when is it due?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The user's current project is the Phoenix project, and it is due on Friday, January 24th.",
+        "expected": "phoenix",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor and what health topic was recently discussed?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The user's doctor is Dr. Sarah Smith, and the recent health topic discussed was allergies.",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "List all the restaurants the user has mentioned.",
+        "type": "memory_capacity",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Olive Garden, Chipotle, Bangkok Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What cities did the user visit in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Rome and Florence.",
+        "expected": "rome",
+        "correct": true
+      },
+      {
+        "query": "What specific attractions or food did the user enjoy in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "The user enjoyed the Colosseum and local pasta in Italy.",
+        "expected": "colosseum",
+        "correct": true
+      },
+      {
+        "query": "Who was the user's manager before the reorg?",
+        "type": "temporal",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Michael Torres.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What was the user's weight before starting the diet?",
+        "type": "temporal",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Information not available.",
+        "expected": "185",
+        "correct": false
+      },
+      {
+        "query": "What management change happened during the reorg?",
+        "type": "temporal",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Before the reorg, Alex reported to Michael Torres; now Jennifer Williams is their new manager.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What is the name of the user's current project?",
+        "type": "knowledge_update",
+        "stores": [
+          "summary",
+          "ltm",
+          "episodic",
+          "stm"
+        ],
+        "response": "Information not available.",
+        "expected": "phoenix",
+        "correct": false
+      }
+    ],
+    "rule_fixed": [
+      {
+        "query": "What allergies does the user have?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "The user is allergic to penicillin and shellfish.",
+        "expected": "penicillin",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Dr. Sarah Smith",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "What is the user's phone number?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "555-867-5309",
+        "expected": "555-867-5309",
+        "correct": true
+      },
+      {
+        "query": "Where does the user work?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "TechCorp",
+        "expected": "techcorp",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's current manager?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "Information not available.",
+        "expected": "jennifer williams",
+        "correct": false
+      },
+      {
+        "query": "What is the user's favorite restaurant?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Olive Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What time is the user's meeting today?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user's meeting today is at 3pm.",
+        "expected": "3pm",
+        "correct": true
+      },
+      {
+        "query": "What budget topic was the user asking about?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user was asking about the Q4 budget allocation discussion.",
+        "expected": "q4",
+        "correct": true
+      },
+      {
+        "query": "What country did the user travel to recently?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Italy",
+        "expected": "italy",
+        "correct": true
+      },
+      {
+        "query": "When is the Phoenix project deadline?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Friday, January 24th.",
+        "expected": "friday",
+        "correct": true
+      },
+      {
+        "query": "What new Thai restaurant did the user try?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Bangkok Garden.",
+        "expected": "bangkok garden",
+        "correct": true
+      },
+      {
+        "query": "What is the user's current project and when is it due?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The user's current project is the Phoenix project, and it is due on Friday, January 24th.",
+        "expected": "phoenix",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor and what health topic was recently discussed?",
+        "type": "multi_hop",
+        "stores": [
+          "ltm"
+        ],
+        "response": "The user's doctor is Dr. Smith, and the recent health topic discussed was allergies.",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "List all the restaurants the user has mentioned.",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Olive Garden, Chipotle, Bangkok Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What cities did the user visit in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Rome and Florence.",
+        "expected": "rome",
+        "correct": true
+      },
+      {
+        "query": "What specific attractions or food did the user enjoy in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "The user enjoyed the Colosseum and local pasta in Italy.",
+        "expected": "colosseum",
+        "correct": true
+      },
+      {
+        "query": "Who was the user's manager before the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Michael Torres.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What was the user's weight before starting the diet?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Information not available.",
+        "expected": "185",
+        "correct": false
+      },
+      {
+        "query": "What management change happened during the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "User's manager changed from Michael Torres to Jennifer Williams.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What is the name of the user's current project?",
+        "type": "knowledge_update",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "Phoenix project",
+        "expected": "phoenix",
+        "correct": true
+      }
+    ],
+    "hybrid_fixed": [
+      {
+        "query": "What allergies does the user have?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "The user is allergic to penicillin and shellfish.",
+        "expected": "penicillin",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Dr. Sarah Smith",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "What is the user's phone number?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "555-867-5309",
+        "expected": "555-867-5309",
+        "correct": true
+      },
+      {
+        "query": "Where does the user work?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "TechCorp",
+        "expected": "techcorp",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's current manager?",
+        "type": "single_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "Information not available.",
+        "expected": "jennifer williams",
+        "correct": false
+      },
+      {
+        "query": "What is the user's favorite restaurant?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Olive Garden",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What time is the user's meeting today?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user's meeting today is at 3pm.",
+        "expected": "3pm",
+        "correct": true
+      },
+      {
+        "query": "What budget topic was the user asking about?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user was asking about the Q4 budget allocation discussion.",
+        "expected": "q4",
+        "correct": true
+      },
+      {
+        "query": "What country did the user travel to recently?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Italy",
+        "expected": "italy",
+        "correct": true
+      },
+      {
+        "query": "When is the Phoenix project deadline?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Friday, January 24th.",
+        "expected": "friday",
+        "correct": true
+      },
+      {
+        "query": "What new Thai restaurant did the user try?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Bangkok Garden.",
+        "expected": "bangkok garden",
+        "correct": true
+      },
+      {
+        "query": "What is the user's current project and when is it due?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The user's current project is the Phoenix project, and it is due on Friday, January 24th.",
+        "expected": "phoenix",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor and what health topic was recently discussed?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The user's doctor is Dr. Sarah Smith, and the recent health topic discussed was allergies.",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "List all the restaurants the user has mentioned.",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Olive Garden, Chipotle, Bangkok Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What cities did the user visit in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Rome and Florence.",
+        "expected": "rome",
+        "correct": true
+      },
+      {
+        "query": "What specific attractions or food did the user enjoy in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "The user enjoyed the Colosseum and local pasta in Italy.",
+        "expected": "colosseum",
+        "correct": true
+      },
+      {
+        "query": "Who was the user's manager before the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Michael Torres.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What was the user's weight before starting the diet?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Information not available.",
+        "expected": "185",
+        "correct": false
+      },
+      {
+        "query": "What management change happened during the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "User's manager changed from Michael Torres to Jennifer Williams.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What is the name of the user's current project?",
+        "type": "knowledge_update",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "Phoenix project",
+        "expected": "phoenix",
+        "correct": true
+      }
+    ],
+    "oracle": [
+      {
+        "query": "What allergies does the user have?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "The user is allergic to penicillin and shellfish.",
+        "expected": "penicillin",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Dr. Sarah Smith",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "What is the user's phone number?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "555-867-5309",
+        "expected": "555-867-5309",
+        "correct": true
+      },
+      {
+        "query": "Where does the user work?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "TechCorp",
+        "expected": "techcorp",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's current manager?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Information not available.",
+        "expected": "jennifer williams",
+        "correct": false
+      },
+      {
+        "query": "What is the user's favorite restaurant?",
+        "type": "single_hop",
+        "stores": [
+          "summary"
+        ],
+        "response": "Olive Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What time is the user's meeting today?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user's meeting today is at 3pm.",
+        "expected": "3pm",
+        "correct": true
+      },
+      {
+        "query": "What budget topic was the user asking about?",
+        "type": "single_session",
+        "stores": [
+          "stm"
+        ],
+        "response": "The user was asking about the Q4 budget allocation discussion.",
+        "expected": "q4",
+        "correct": true
+      },
+      {
+        "query": "What country did the user travel to recently?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Italy",
+        "expected": "italy",
+        "correct": true
+      },
+      {
+        "query": "When is the Phoenix project deadline?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Friday, January 24th.",
+        "expected": "friday",
+        "correct": true
+      },
+      {
+        "query": "What new Thai restaurant did the user try?",
+        "type": "recent_session",
+        "stores": [
+          "ltm"
+        ],
+        "response": "Bangkok Garden.",
+        "expected": "bangkok garden",
+        "correct": true
+      },
+      {
+        "query": "What is the user's current project and when is it due?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The user's current project is the Phoenix project, and it is due on Friday, January 24th.",
+        "expected": "phoenix",
+        "correct": true
+      },
+      {
+        "query": "Who is the user's doctor and what health topic was recently discussed?",
+        "type": "multi_hop",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The user's doctor is Dr. Sarah Smith, and the recent health topic discussed was allergies.",
+        "expected": "dr. smith",
+        "correct": true
+      },
+      {
+        "query": "List all the restaurants the user has mentioned.",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Olive Garden, Chipotle, Bangkok Garden.",
+        "expected": "olive garden",
+        "correct": true
+      },
+      {
+        "query": "What cities did the user visit in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Rome and Florence.",
+        "expected": "rome",
+        "correct": true
+      },
+      {
+        "query": "What specific attractions or food did the user enjoy in Italy?",
+        "type": "memory_capacity",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "The user enjoyed the Colosseum and local pasta in Italy.",
+        "expected": "colosseum",
+        "correct": true
+      },
+      {
+        "query": "Who was the user's manager before the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Michael Torres.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What was the user's weight before starting the diet?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "Information not available.",
+        "expected": "185",
+        "correct": false
+      },
+      {
+        "query": "What management change happened during the reorg?",
+        "type": "temporal",
+        "stores": [
+          "ltm",
+          "episodic"
+        ],
+        "response": "User's manager changed from Michael Torres to Jennifer Williams.",
+        "expected": "michael torres",
+        "correct": true
+      },
+      {
+        "query": "What is the name of the user's current project?",
+        "type": "knowledge_update",
+        "stores": [
+          "summary",
+          "ltm"
+        ],
+        "response": "The current project is the Phoenix project.",
+        "expected": "phoenix",
+        "correct": true
+      }
+    ]
+  }
+}

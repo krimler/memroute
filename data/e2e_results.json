@@ -1,0 +1,47 @@
+{
+  "uniform": {
+    "qa_accuracy": 0.6,
+    "avg_cost": 10.0,
+    "avg_k": 10.0,
+    "correct": 6,
+    "total": 10,
+    "per_type": {
+      "single_hop": 1.0,
+      "single_session": 1.0,
+      "recent_session": 0.0,
+      "memory_capacity": 0.0,
+      "multi_session": 1.0,
+      "temporal": 0.0
+    }
+  },
+  "hybrid": {
+    "qa_accuracy": 0.6,
+    "avg_cost": 4.9,
+    "avg_k": 6.1,
+    "correct": 6,
+    "total": 10,
+    "per_type": {
+      "single_hop": 0.75,
+      "single_session": 1.0,
+      "recent_session": 0.5,
+      "memory_capacity": 0.0,
+      "multi_session": 1.0,
+      "temporal": 0.0
+    }
+  },
+  "oracle": {
+    "qa_accuracy": 0.7,
+    "avg_cost": 4.1,
+    "avg_k": 5.4,
+    "correct": 7,
+    "total": 10,
+    "per_type": {
+      "single_hop": 0.75,
+      "single_session": 1.0,
+      "recent_session": 1.0,
+      "memory_capacity": 0.0,
+      "multi_session": 1.0,
+      "temporal": 0.0
+    }
+  }
+}

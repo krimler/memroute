@@ -1,0 +1,81 @@
+{
+  "locomo": {
+    "uniform": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "knowledge_update": 1.0,
+        "single_session": 1.0,
+        "temporal": 1.0,
+        "recent_session": 1.0,
+        "multi_session": 1.0,
+        "user_fact": 1.0
+      }
+    },
+    "rule_based": {
+      "accuracy": 0.28888888888888886,
+      "avg_k": 4.4,
+      "efficiency": 2.2727272727272725,
+      "per_type": {
+        "knowledge_update": 0.0,
+        "single_session": 0.4375,
+        "temporal": 0.0,
+        "recent_session": 0.3076923076923077,
+        "multi_session": 0.0,
+        "user_fact": 1.0
+      }
+    },
+    "ucb": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "knowledge_update": 1.0,
+        "single_session": 1.0,
+        "temporal": 1.0,
+        "recent_session": 1.0,
+        "multi_session": 1.0,
+        "user_fact": 1.0
+      }
+    }
+  },
+  "longmemeval": {
+    "uniform": {
+      "accuracy": 1.0,
+      "avg_k": 10.0,
+      "efficiency": 1.0,
+      "per_type": {
+        "memory_capacity": 1.0,
+        "multi_hop": 1.0,
+        "temporal": 1.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0
+      }
+    },
+    "rule_based": {
+      "accuracy": 0.38333333333333336,
+      "avg_k": 4.9,
+      "efficiency": 2.0408163265306123,
+      "per_type": {
+        "memory_capacity": 0.0,
+        "multi_hop": 0.42857142857142855,
+        "temporal": 0.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0
+      }
+    },
+    "ucb": {
+      "accuracy": 0.3333333333333333,
+      "avg_k": 3.0,
+      "efficiency": 3.3333333333333335,
+      "per_type": {
+        "memory_capacity": 0.0,
+        "multi_hop": 0.0,
+        "temporal": 0.0,
+        "knowledge_update": 1.0,
+        "single_hop": 1.0
+      }
+    }
+  }
+}
