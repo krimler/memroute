@@ -114,10 +114,10 @@ The framework evaluates routing using:
 ## Citation
 
 ```
-@inproceedings{store-routing-2026,
-  title={Did You Check the Right Pocket? Store Routing for Memory-Augmented Agents},
-  author={Anonymous},
-  year={2026}
+@inproceedings{gaikwad2026did,
+  title={Did You Check the Right Pocket? Cost-Sensitive Store Routing for Memory-Augmented Agents},
+  author={Gaikwad, Madhava},
+  booktitle={ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems}
 }
 ```
 
